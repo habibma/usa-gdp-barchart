@@ -8,6 +8,7 @@ body {
 }
 
 .container {
+    min-width: fit-content;
     background-color: #DDD;
     margin: auto;
     padding: 10px;
@@ -51,4 +52,11 @@ button {
 
 #tooltip {
     background-color: #111;
+}
+
+footer {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

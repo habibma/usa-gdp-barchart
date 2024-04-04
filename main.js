@@ -78,5 +78,5 @@ padding = 50;
 const svg = d3.select('#bar-chart-contianer')
     .append('svg')
     .attr('width', w)
-    .attr('height', '80vh')
+    .attr('height', '75vh')
     .style('background-color', '#EEE');
