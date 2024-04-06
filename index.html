@@ -31,9 +31,13 @@
         </span>
 
       </div>
-      <!-- <button id="button">Get United States GDP</button> -->
-      <div id="bar-chart-contianer"></div>
-      <small aria-lable="source" id="source"></source>
+      <select id="select-type" onchange="setType(this)">
+        <option value="barChart" selected>Bar Chart</option>
+        <option value="table">Table</option>
+      </select>
+      <div id="chart-container"></div>
+      <div id="table-container" style="display: none;"></div>
+      <small aria-lable="source" id="source"></small>
     </div>
   </main>
   <footer><small>Coded by <a href="https://habibmote.com/" target="_blank">Habib Mote</a></small></footer>

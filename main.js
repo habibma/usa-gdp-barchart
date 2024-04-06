@@ -56,16 +56,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
             // table version
-
-            data.forEach(d => {
-                return (
+            const table = (
                     `<table>
-              <caption>${d.name}</caption>
-              <div>ddddddddd</div>
-            </table>`
-                )
-            })
-
+                            <thead>
+                                <th>${data.column_names[0]}</th>
+                                <th>${data.column_names[1]}</th>
+                            </thead>
+                            <tbody>
+                                ${dataset.map(element => {
+                                    return (
+                                        `<tr>
+                                            <th>${element[0]}</th>
+                                            <th>${element[1]}</th>
+                                        </tr>`
+                                    )
+                            })}
+                            </tbody>
+                    </table>`
+                );
+            document.getElementById('table-container').innerHTML = table;
+        
         })
     // }
 });
@@ -75,8 +85,20 @@ const w = 1200;
 const h = 500;
 padding = 50;
 
-const svg = d3.select('#bar-chart-contianer')
+const svg = d3.select('#chart-container')
     .append('svg')
     .attr('width', w)
     .attr('height', '75vh')
     .style('background-color', '#EEE');
+
+
+const setType = (obj) => {
+    if (obj.value === 'barChart') {
+        document.getElementById('table-container').style.display = "none";
+        document.getElementById('chart-container').style.display = "block"
+    }
+    if (obj.value === 'table') {
+        document.getElementById('table-container').style.display = "block";
+        document.getElementById('chart-container').style.display = "none"
+    }
+}

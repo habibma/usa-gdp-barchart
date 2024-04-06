@@ -30,10 +30,11 @@ body {
     cursor: pointer;
 }
 
-button {
+select {
     width: 200px;
     height: 30px;
     border-radius: 5px;
+    justify-self: end;
 }
 
 .bar:hover {
@@ -59,4 +60,24 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* table */
+table {
+    margin: auto;
+    width: 1200px;
+    border-collapse: collapse;
+    border: 3px solid #333;
+    background-color: #EEE;
+}
+
+th,
+td {
+    padding: 10px;
+    border: #999 1px dashed ;
+    font-size: 12px;
+}
+
+.table-container::before {
+    content: "1";
 }
