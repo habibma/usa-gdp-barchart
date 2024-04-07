@@ -18,41 +18,11 @@ body {
     gap: 5px;
 }
 
-#title {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-#title > #description {
-    width: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
 select {
     width: 200px;
     height: 30px;
     border-radius: 5px;
     justify-self: end;
-}
-
-.bar:hover {
-    fill: red;
-    cursor: pointer;
-}
-
-.text {
-    font-size: 8px;
-    font-weight: bold;
-}
-
-#source {
-    justify-self: start;
-}
-
-#tooltip {
-    background-color: #111;
 }
 
 footer {
@@ -76,8 +46,4 @@ td {
     padding: 10px;
     border: #999 1px dashed ;
     font-size: 12px;
-}
-
-.table-container::before {
-    content: "1";
 }

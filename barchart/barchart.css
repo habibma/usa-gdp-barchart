@@ -1,0 +1,29 @@
+#title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#title > #description {
+    width: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bar:hover {
+    fill: red;
+    cursor: pointer;
+}
+
+.text {
+    font-size: 8px;
+    font-weight: bold;
+}
+
+#source {
+    justify-self: start;
+}
+
+#tooltip {
+    background-color: #111;
+}
