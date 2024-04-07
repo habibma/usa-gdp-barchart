@@ -7,6 +7,21 @@ body {
     padding: 0;
 }
 
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 .container {
     min-width: fit-content;
     background-color: #DDD;
@@ -16,6 +31,18 @@ body {
     justify-content: center;
     justify-items: center;
     gap: 5px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.description {
+    width: 20px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 select {

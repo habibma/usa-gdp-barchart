@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('source').innerHTML = `<b>Source</b>: ${source}`;
 
             const description = data.description;
-            document.getElementById('description').setAttribute('title', description);
+            document.getElementsByClassName('description')[0].setAttribute('title', description);
 
             const dataset = data.data;
 
