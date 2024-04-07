@@ -1,0 +1,14 @@
+.dot {
+    cursor: pointer;
+    stroke: #000;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.tooltip {
+    width: 250px;
+    position: absolute;
+    padding: 10px;
+    border-radius: 5px;
+    color: #FFF;
+}

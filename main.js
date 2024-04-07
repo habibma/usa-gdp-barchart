@@ -66,8 +66,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 ${dataset.map(element => {
                                     return (
                                         `<tr>
-                                            <th>${element[0]}</th>
-                                            <th>${element[1]}</th>
+                                            <td>${element[0]}</td>
+                                            <td>${element[1]}</td>
                                         </tr>`
                                     )
                             })}
