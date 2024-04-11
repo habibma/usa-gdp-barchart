@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dawing plots by D3</title>
+  <meta property="og:title" content="Monthly Global Land-Surface Temperature" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description " content="An app that displays data using the D3 library" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="./d3.svg" />
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./heatmap.css">
+  <link rel="icon" href="./d3.svg" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav">
+        <li><a href="/index.html">Home</a></li>>
+        <li><a href="/scatterplot/scatterplot.html">Heat Map</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="container" class="container">
+      <div class="title">
+        <h1>Monthly Global Land-Surface Temperature</h1>
+
+        <span class="description" title="1753 - 2015: base temperature 8.66℃">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+            class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+          </svg>
+        </span>
+
+      </div>
+      <select id="select-type" onchange="setType(this)">
+        <option value="heatmap" selected>Heat Map</option>
+        <option value="table">Table</option>
+      </select>
+      <div id="map-container"></div>
+      <div id="table-container" style="display: none;"></div>
+      <small aria-lable="source" id="source"></small>
+    </div>
+  </main>
+  <footer><small>Coded by <a href="https://habibmote.com/" target="_blank">Habib Mote</a></small></footer>
+  <script src="heatmap.js"></script>
+</body>
+
+</html>

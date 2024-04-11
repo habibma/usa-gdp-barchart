@@ -65,7 +65,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 .attr('data-xvalue', d => d.Year)
                 .attr('data-yvalue', d => d.Time.toString())
                 .on('mouseover', (event, d) => {
-                    console.log('yes')
                     div.style('display', 'block')
                     div.style('opacity', 0.9);
                     div.attr('data-year', d.Year);
